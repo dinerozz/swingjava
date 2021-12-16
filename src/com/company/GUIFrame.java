@@ -40,6 +40,10 @@ public class GUIFrame{
         calculateButton.addActionListener(new ActionListener() { // добавляем слушатель событий
             @Override
             public void actionPerformed(ActionEvent e) { // при нажатии на кнопку calculate, выполняем следующий код:
+                //Все смещения точки при распространении незатухающих колебаний
+                //заданной амплитудой А, периодом колебаний Т и скоростью распространения
+                //с, отстоящей от источника колебаний на расстоянии L при изменении t от 0 до
+                //10 сек с шагом 0,5 сек.
                 String getAmplitude = AmplitudeTextField.getText();
                 A = Double.parseDouble(getAmplitude); // считываем значение с textField и присваиваем его соответствующей переменной
                 String getPeriod = PeriodTextField.getText();
